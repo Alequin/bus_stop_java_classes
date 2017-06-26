@@ -21,4 +21,21 @@ public class BusStopTest{
     assertEquals(bus, busStop.getBusAtStop());
     assertEquals(null, busStop.getBusAtStop());
   }
+
+  @Test
+  public void addPersonToBusStop(){
+
+  }
+
+  @Test
+  public void checkNumberOfPeopleAtBusStop(){
+
+  }
+
+  @Test
+  public void getPersonOffBus(){
+
+  }
+
+
 }

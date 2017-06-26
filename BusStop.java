@@ -17,4 +17,11 @@ public class BusStop{
     return tempBus;
   }
 
+  public getPersonOffBus(){
+    int index = 0;
+    for(Person person : people){
+      
+    }
+  }
+
 }
