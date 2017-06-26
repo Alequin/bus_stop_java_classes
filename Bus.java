@@ -10,10 +10,7 @@ public class Bus{
     int count = 0;
     for(int j=0; j<passengers.length; j++){
       if(passengers[j] == null){
-        if(j == 0){
-          return 0;
-        }
-        count = j+1;
+        count = j;
         break;
       }
     }
@@ -21,6 +18,6 @@ public class Bus{
   }
 
   public void add(Person person){
-
+    this.passengers[getPassengerCount()] = person;
   }
 }
