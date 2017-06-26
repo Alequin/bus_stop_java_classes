@@ -22,6 +22,16 @@ public class Bus{
     this.passengers[count] = person;
   }
 
+  public Person removePassenger(){
+    int index = getPassengerCount()-1;
+    if(index < 0){
+      return null;
+    }
+    Person tempPerson = this.passengers[index];
+    this.passengers[index] = null;
+    return tempPerson;
+  }
+
   public boolean isBusFull(){
     return getPassengerCount() == this.passengers.length;
   }
