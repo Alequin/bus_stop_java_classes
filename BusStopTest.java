@@ -15,4 +15,10 @@ public class BusStopTest{
     this.person = new Person("Andrew");
   }
 
+  @Test
+  public void setAndGetBusAtStop(){
+    busStop.setBusAtStop(bus);
+    assertEquals(bus, busStop.getBusAtStop());
+    assertEquals(null, busStop.getBusAtStop());
+  }
 }
