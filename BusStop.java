@@ -17,11 +17,22 @@ public class BusStop{
     return tempBus;
   }
 
-  public getPersonOffBus(){
-    int index = 0;
-    for(Person person : people){
-      
+  public void addPerson(Person person){
+    int index = countPeople();
+    if(index < people.length){
+      people[index] = person;
     }
+  }
+
+  public int countPeople(){
+    int count = 0;
+    for(int j=0; j<people.length; j++){
+      if(people[j] == null){
+        break;
+      }
+      count += 1;
+    }
+    return count;
   }
 
 }

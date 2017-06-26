@@ -24,12 +24,10 @@ public class BusStopTest{
 
   @Test
   public void checkNumberOfPeopleAtBusStop(){
-
-  }
-
-  @Test
-  public void addPersonToBusStop(){
-
+    busStop.addPerson(person);
+    assertEquals(1, busStop.countPeople());
+    busStop.addPerson(person);
+    assertEquals(2, busStop.countPeople());
   }
 
   @Test
