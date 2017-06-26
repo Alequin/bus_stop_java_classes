@@ -26,11 +26,10 @@ public class BusTest{
 
   @Test
   public void checkIfBusIsFull(){
-    for(int j=0; j<10; j++){
+    for(int j=0; j<9; j++){
       bus.add(person);
     }
     assertEquals(false, bus.isBusFull());
-
     bus.add(person);
     assertEquals(true, bus.isBusFull());
   }
