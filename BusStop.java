@@ -35,4 +35,9 @@ public class BusStop{
     return count;
   }
 
+  public void getPersonOffBus(){
+    int index = countPeople();
+    people[index] = busAtStop.removePassenger();
+  }
+
 }
