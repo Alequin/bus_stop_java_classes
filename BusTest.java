@@ -34,4 +34,12 @@ public class BusTest{
     assertEquals(true, bus.isBusFull());
   }
 
+  @Test
+  public void getPersonOffBus(){
+    bus.add(person);
+    int preRemoveCount = bus.getPassengerCount();
+    bus.removePassenger();
+    assertEquals(preRemoveCount-1, bus.getPassengerCount());
+  }
+
 }
