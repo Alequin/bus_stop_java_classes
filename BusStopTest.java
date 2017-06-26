@@ -13,6 +13,7 @@ public class BusStopTest{
     this.busStop = new BusStop();
     this.bus = new Bus(10);
     this.person = new Person("Andrew");
+    this.bus.add(this.person);
   }
 
   @Test
@@ -32,7 +33,12 @@ public class BusStopTest{
 
   @Test
   public void getPersonOffBus(){
-
+    int preBusPassengerCount = bus.getPassengerCount();
+    int preBusStopPeopleCount = busStop.countPeople();
+    busStop.setBusAtStop(bus);
+    busStop.getPersonOffBus();
+    assertEquals(preBusPassengerCount - 1, bus.getPassengerCount());
+    assertEquals(preBusStopPeopleCount + 1, busStop.countPeople());
   }
 
 
