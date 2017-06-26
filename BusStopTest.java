@@ -23,12 +23,12 @@ public class BusStopTest{
   }
 
   @Test
-  public void addPersonToBusStop(){
+  public void checkNumberOfPeopleAtBusStop(){
 
   }
 
   @Test
-  public void checkNumberOfPeopleAtBusStop(){
+  public void addPersonToBusStop(){
 
   }
 
