@@ -10,14 +10,19 @@ public class Bus{
     int count = 0;
     for(int j=0; j<passengers.length; j++){
       if(passengers[j] == null){
-        count = j;
         break;
       }
+      count += 1;
     }
     return count;
   }
 
   public void add(Person person){
-    this.passengers[getPassengerCount()] = person;
+    int count = getPassengerCount();
+    this.passengers[count] = person;
+  }
+
+  public boolean isBusFull(){
+    return getPassengerCount() == this.passengers.length;
   }
 }
