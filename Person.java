@@ -1,8 +1,8 @@
-public class Bus{
+public class Person{
 
   private String name;
 
-  public Bus(String name){
+  public Person(String name){
     this.name = name;
   }
 
