@@ -4,10 +4,13 @@ import org.junit.Test;
 
 public class BusTest{
 
-  @before
+  private Bus bus;
+  private Person person;
+
+  @Before
   public void setup(){
-    Bus bus = new Bus(10);
-    Person person = new Person("Andrew");
+    this.bus = new Bus(10);
+    this.person = new Person("Andrew");
   }
 
   @Test
