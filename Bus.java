@@ -8,9 +8,12 @@ public class Bus{
 
   public int getPassengerCount(){
     int count = 0;
-    for(int j=1; j<passengers.length; j++){
+    for(int j=0; j<passengers.length; j++){
       if(passengers[j] == null){
-        count = j;
+        if(j == 0){
+          return 0;
+        }
+        count = j+1;
         break;
       }
     }
