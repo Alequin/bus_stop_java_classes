@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class PersonTest{
 
-  @before
+  @Before
   public void setup(){
     Person person = new Person("Andrew");
   }
